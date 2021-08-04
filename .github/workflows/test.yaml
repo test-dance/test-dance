@@ -1,7 +1,5 @@
 name: ""
-on:
-  pull_request:
-    types: [opened]
+on: push
 jobs:
   test:
     runs-on: ubuntu-16.04
