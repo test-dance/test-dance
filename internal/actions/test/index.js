@@ -13,7 +13,7 @@ const repo = payload.repository.name;
   console.log(repo);
   console.log(pullNumber);
   console.log(url);
-  const result = await get(url);
+  const result = await get(url, {headers: `Authorization: token ${process.env.TOKEN}`});
   console.log(result.body);
   const files = JSON.parse(result.body).map(({filename}) => filename);
   console.log(files);
