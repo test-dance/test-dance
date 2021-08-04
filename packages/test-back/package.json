@@ -1,7 +1,7 @@
 {
-  "name": "@test-dance/{{name}}",
-  "version": "0.0.0",
-  "description": "{{description}}",
+  "name": "@test-dance/test-back",
+  "version": "0.0.1",
+  "description": "Test for deploy package",
   "main": "out/index.js",
   "types": "out/index.d.ts",
   "typings": "out/index.d.ts",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/schoolar-ru/schoolar"
+    "url": "https://github.com/test-dance/test-dance"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

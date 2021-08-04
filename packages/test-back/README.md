@@ -1,4 +1,4 @@
-# @test-dance/{{name}}
+# @test-dance/test-back
 
 ![Version](./reports/badges/badge-version.svg)
 ![Coverage lines](./reports/badges/badge-lines.svg)
@@ -6,7 +6,7 @@
 ![Coverage branches](./reports/badges/badge-branches.svg)
 
 ## Description
-{{description}}
+Test for deploy package
 
 ## Usage
 ```ts

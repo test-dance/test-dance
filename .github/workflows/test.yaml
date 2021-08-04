@@ -1,0 +1,17 @@
+name: ""
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  test:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - uses: CultureHQ/actions-yarn@master
+        with:
+          args: install --ignore-engines
+
+      - name: Run action
+        uses: ./internal/actions/test
