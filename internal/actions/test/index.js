@@ -1,6 +1,5 @@
 const { context } = require('@actions/github/lib/github');
 const { get } = require('got');
-console.log('Hello I am action');
 
 const { payload } = context;
 const pullNumber = payload.pull_request.number;
@@ -9,10 +8,6 @@ const repo = payload.repository.name;
 
 (async () => {
   const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${pullNumber}/files`;
-  console.log(owner);
-  console.log(repo);
-  console.log(pullNumber);
-  console.log(url);
   const result = await get(url, {
     headers: {
       'Authorization': `token ${process.env.TOKEN}`,
