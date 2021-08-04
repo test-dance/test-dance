@@ -2,6 +2,7 @@ const { context } = require('@actions/github/lib/github');
 console.log('Hello I am action');
 
 const { payload } = context;
+console.log(payload);
 const pullNumber = payload.pull_request.number;
 const owner = payload.repository.owner.login;
 const repo = payload.repository.name;
