@@ -8,9 +8,12 @@ const owner = payload.repository.owner.login;
 const repo = payload.repository.name;
 
 (async () => {
+  const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${pullNumber}/files`;
   console.log(owner);
   console.log(repo);
-  const result = await get(`https://api.github.com/repos/${owner}/${repo}/pulls/${pullNumber}/files`);
+  console.log(pullNumber);
+  console.log(url);
+  const result = await get(url);
   console.log(result.body);
   const files = JSON.parse(result.body).map(({filename}) => filename);
   console.log(files);
