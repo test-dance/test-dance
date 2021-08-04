@@ -1,0 +1,30 @@
+{
+  "name": "drivers",
+  "version": "0.0.1",
+  "description": "bla bla bla",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "typings": "out/index.d.ts",
+  "license": "ISC",
+  "files": [
+    "out/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoolar-ru/schoolar"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "## Required commands ##": "Run these commands only from root by commands: yarn <command>_entity [--project /packages/drivers]",
+    "build": "./internal/bin/amake build-back-package",
+    "test": "./internal/bin/amake test-back-package",
+    "clear": "./internal/bin/amake clear-package",
+    "report": "./internal/bin/amake report",
+    "prerelease": "./internal/bin/amake prerelease-package",
+
+    "## Eject configuration ##": "create config file that override any configurations",
+    "eject": "./internal/bin/amake eject"
+  }
+}

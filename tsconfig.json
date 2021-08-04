@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["DOM", "ESNext"],
+    "target": "ES5",
+    "noErrorTruncation": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true
+  }
+}

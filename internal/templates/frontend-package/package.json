@@ -1,0 +1,28 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.0",
+  "description": "{{description}}",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "typings": "out/index.d.ts",
+  "license": "ISC",
+  "files": [
+    "out/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoolar-ru/schoolar"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "## Required commands ##": "",
+    "build": "./internal/bin/amake build-front-package",
+    "test": "./internal/bin/amake test-front-package",
+    "clear": "./internal/bin/amake clear-package",
+
+    "## Eject configuration ##": "create config file that override any configurations",
+    "eject": "./internal/bin/amake eject"
+  }
+}

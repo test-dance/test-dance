@@ -1,0 +1,30 @@
+{
+  "name": "pg-info",
+  "version": "0.0.0",
+  "description": "Postgres tools",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "typings": "out/index.d.ts",
+  "license": "ISC",
+  "files": [
+    "out/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoolar-ru/schoolar"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "## Required commands ##": "",
+    "build": "./internal/bin/amake build-back-package",
+    "test": "./internal/bin/amake test-back-package",
+    "clear": "./internal/bin/amake clear-package",
+    "report": "./internal/bin/amake report",
+    "prerelease": "./internal/bin/amake prerelease-package",
+
+    "## Eject configuration ##": "create config file that override any configurations",
+    "eject": "./internal/bin/amake eject"
+  }
+}
