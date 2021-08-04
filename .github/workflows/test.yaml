@@ -11,7 +11,7 @@ jobs:
 
       - uses: CultureHQ/actions-yarn@master
         with:
-          args: install
+          args: install --ignore-engines
 
       - name: Run action
         uses: ./internal/actions/test
