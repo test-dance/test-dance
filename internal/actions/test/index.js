@@ -7,8 +7,7 @@ const owner = payload.repository.owner.login;
 const repo = payload.repository.name;
 
 (async () => {
-  console.log(process.env.TOKEN);
-  const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${pullNumber}/files`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${pullNumber}/files?access_token=${process.env.TOKEN}`;
   const result = await get(url, {
     headers: {
       'Authorization': `token ${process.env.TOKEN}`,
